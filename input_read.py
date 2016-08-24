@@ -6,7 +6,10 @@ import struct
 import time
 import sys
 
-infile_path = sys.argv[1]
+if len(sys.argv) < 2:
+    infile_path = "/dev/input/event1"
+else:
+    infile_path = sys.argv[1]
 
 #int, int, unsigned short, unsigned short, unsigned int
 FORMAT = 'iihhi'

@@ -18,6 +18,6 @@ input_read.py is code found at http://stackoverflow.com/a/16682549. Kindle touch
 
 To read input events, scp input_read.py to Kindle (requires Python installed on Kindle).
 
-Run "python input_read.py /dev/input/event1" to read out touchscreen event data.
+Run "python input_read.py" on Kindle to read out touchscreen event data from /dev/input/event1.
 
 To test input_read without a Kindle, simply run it with page_back or page_forward as its first argument.
